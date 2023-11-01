@@ -1,4 +1,19 @@
 {
   "name": "minimajs-starterkit",
-  "packageManager": "yarn@4.0.1"
+  "type": "module",
+  "packageManager": "yarn@4.0.1",
+  "scripts": {
+    "dev": "ebx src/index.ts -wsr",
+    "build": "ebx src/index.ts -s",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "ebx": "^0.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@minimajs/app": "^0.0.1",
+    "@minimajs/schema": "^0.0.1"
+  }
 }
